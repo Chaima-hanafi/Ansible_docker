@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+</head>
+<body>
+    <h2>Se connecter</h2>
+    <form method="POST">
+        <label>Nom d'utilisateur :</label>
+        <input type="text" name="username" required><br>
+        <label>Mot de passe :</label>
+        <input type="password" name="password" required><br>
+        <input type="submit" value="Connexion">
+    </form>
+    <p>Pas encore inscrit ? <a href="{{ url_for('register') }}">Créer un compte</a></p>
+</body>
+</html>
